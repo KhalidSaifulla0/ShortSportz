@@ -1,81 +1,69 @@
-# Turborepo starter
+---
 
-This is an official starter Turborepo.
+# Simple Blogging Platform
 
-## Using this example
+A medium-like blogging platform where users can create blogs and read other people's blogs.
 
-Run the following command:
+## Description
 
-```sh
-npx create-turbo@latest
-```
+This project is a simple blogging platform designed to allow users to create their own blogs and read blogs created by others. The platform offers an easy-to-use interface and a seamless experience for both blog creation and reading.
 
-## What's inside?
+## Features
 
-This Turborepo includes the following packages/apps:
+- User authentication and authorization
+- Create, edit, and delete blogs
+- Read blogs posted by other users
+- Responsive design for a great experience on both desktop and mobile devices
 
-### Apps and Packages
+## Tech Stack
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- **Frontend**: React.js
+- **Backend**: Cloudflare Workers using Hono.js framework
+- **Database**: PostgreSQL with Prisma as ORM
+- **Validation**: Zod
+- **Language**: TypeScript
+- Monorepo Management: TurboRepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Installation
 
-### Utilities
+### Prerequisites
 
-This Turborepo has some additional tools already setup for you:
+- Node.js
+- PostgreSQL
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+### Steps
 
-### Build
+1. **Clone the repository**:
 
-To build all apps and packages, run the following command:
+   ```bash
+   git clone https://github.com/your-username/your-repository-name.git
+   cd your-repository-name
+   ```
 
-```
-cd my-turborepo
-pnpm build
-```
+2. **Install dependencies**:
 
-### Develop
+   ```bash
+   npm install
+   ```
 
-To develop all apps and packages, run the following command:
+3. **Set up environment variables**:
 
-```
-cd my-turborepo
-pnpm dev
-```
+   - Create a `.wrangler` and `wrangler.toml` file in the `api` directory and add your PostgreSQL database connection details and wrangler files.
 
-### Remote Caching
+4. **Run the backend**:
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+   ```bash
+   Backend is hosted on Cloudflare
+   https://api.ksaifulla90.workers.dev
+   ```
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+5. **Run the frontend**:
+   ```bash
+   npm run dev
+   ```
 
-```
-cd my-turborepo
-npx turbo login
-```
+## Usage
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+1. **Sign up or log in** to start creating blogs.
+2. **Create a new blog** by navigating to the create blog section.
+3. **Read blogs** from other users by browsing the home page.

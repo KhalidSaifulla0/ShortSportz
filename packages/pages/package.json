@@ -1,0 +1,19 @@
+{
+  "name": "@repo/pages",
+  "version": "1.0.0",
+  "exports": {
+    "./signin": "./src/signin.tsx",
+    "./signup": "./src/signup.tsx",
+    "./blogs": "./src/blogs.tsx",
+    "./blog": "./src/blog.tsx",
+    "./newBlog": "./src/newBlog.tsx"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
