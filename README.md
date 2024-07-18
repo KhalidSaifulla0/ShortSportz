@@ -36,8 +36,8 @@ This project is a simple blogging platform designed to allow users to create the
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+   git clone https://github.com/KhalidSaifulla0/ShortSportz
+   cd ShortSportz
    ```
 
 2. **Install dependencies**:
